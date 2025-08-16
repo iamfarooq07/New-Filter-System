@@ -40,9 +40,8 @@
   <div class="grid grid-cols-12 gap-3 px-5 py-4">
     <!-- sidebar -->
     <aside class="col-span-12 md:col-span-3 lg:col-span-2 space-y-3">
-      <!-- Filters header -->
-      <div class="flex items-center justify-between">
-
+      <div id="themes" class="text-center">
+        <button class="w-25 p-2 bg-slate-800/60 rounded-md hover:bg-neutral-700"><i class="fa-solid fa-lightbulb"></i>Themes</button>
       </div>
 
       <!-- category filter -->
@@ -53,7 +52,7 @@
 
       <!-- price filter -->
       <div class="space-y-3 bg-slate-800/60 p-4 rounded-md" id="priceFilterWrap">
-        <h3 class="font-medium">Price</h3>
+        <h3 class="font-medium"></h3>
         <div class="space-y-2" id="priceFilter"></div>
       </div>
 
@@ -113,8 +112,7 @@
               <path
                 d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
             </svg>
-            <svg aria-hidden="true" class="w-5 h-5" viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg">
+            <svg aria-hidden="true" class="w-5 h-5" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
             </svg>
@@ -138,13 +136,11 @@
               <path
                 d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
             </svg>
-            <svg aria-hidden="true" class="w-5 h-5" viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg">
+            <svg aria-hidden="true" class="w-5 h-5" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
             </svg>
-            <svg aria-hidden="true" class="w-5 h-5" viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg">
+            <svg aria-hidden="true" class="w-5 h-5" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
             </svg>
@@ -163,18 +159,15 @@
               <path
                 d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
             </svg>
-            <svg aria-hidden="true" class="w-5 h-5" viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg">
+            <svg aria-hidden="true" class="w-5 h-5" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
             </svg>
-            <svg aria-hidden="true" class="w-5 h-5" viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg">
+            <svg aria-hidden="true" class="w-5 h-5" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
             </svg>
-            <svg aria-hidden="true" class="w-5 h-5" viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg">
+            <svg aria-hidden="true" class="w-5 h-5" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
             </svg>
@@ -188,23 +181,19 @@
               <path
                 d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
             </svg>
-            <svg aria-hidden="true" class="w-5 h-5" viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg">
+            <svg aria-hidden="true" class="w-5 h-5" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
             </svg>
-            <svg aria-hidden="true" class="w-5 h-5" viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg">
+            <svg aria-hidden="true" class="w-5 h-5" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
             </svg>
-            <svg aria-hidden="true" class="w-5 h-5" viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg">
+            <svg aria-hidden="true" class="w-5 h-5" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
             </svg>
-            <svg aria-hidden="true" class="w-5 h-5" viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg">
+            <svg aria-hidden="true" class="w-5 h-5" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
             </svg>
@@ -212,10 +201,10 @@
           <p class="text-gray-400">1.0</p>
         </div>
       </div>
-      
+
       <div class="text-center text-sm text-neutral-300" id="resultsInfo"></div>
 
-      <button id="clearAllBtn" class="w-full bg-slate-800/60 px-3 py-1 rounded-md">Clear All</button>
+      <button id="clearAllBtn" class="w-full bg-slate-800/60 px-3 py-1 rounded-md hover:bg-neutral-700">Clear All</button>
       <div class="col-span-2 p-2 w-[100%] border rounded-xl">
         <select id="sortingSelect" class="w-full bg-black">
           <option value="ratingHightToLow">Rating High to Low</option>
@@ -235,6 +224,9 @@
               class="fa-solid fa-xmark text-black"></i></button>
         </div> -->
         <div id="chipContainer" class="flex flex-wrap gap-2"></div>
+        <div class="search-bar w-full max-w-md mx-auto">
+          <input type="text" id="searchInput" placeholder="Search products..." class="w-full p-2 rounded-md bg-black text-white" onkeyup="onSearchHandler(event)" />
+        </div>
 
         <div class="flex items-end gap-2 text-sm">
           <label for="pageSize" class="text-neutral-400">Per page</label>

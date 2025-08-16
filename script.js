@@ -8,6 +8,9 @@ const products = [
   { id: 7, image: "./images/products/burger.png", title: "Burger3", description: "Enjoy the crispy chiken fillet in a soft bun with spicy mayo and our signature sauce", price: 700, category: "Burger", rating: 4 },
   { id: 8, image: "./images/products/shawarma.jpg", title: "Shawarma3", description: "Aromatic arabian rice with 6 pacs of hot shots with KFC famous vietnamese sauce", price: 800, category: "Shawarma", rating: 3 },
   { id: 9, image: "./images/products/piz.jpg", title: "Pizza3", description: "Crispy zinger with crispy rolled into paratha", price: 900, category: "Pizza", rating: 2 },
+  { id: 10, image: "./images/products/piz.jpg", title: "Pizza3", description: "Crispy zinger with crispy rolled into paratha", price: 900, category: "Pizza", rating: 2 },
+  { id: 11, image: "./images/products/piz.jpg", title: "Pizza3", description: "Crispy zinger with crispy rolled into paratha", price: 900, category: "Pizza", rating: 2 },
+  { id: 12, image: "./images/products/piz.jpg", title: "Pizza3", description: "Crispy zinger with crispy rolled into paratha", price: 900, category: "Pizza", rating: 2 },
 ];
 
 const categories = [{ id: 1, title: "Burger", image: "" },
@@ -19,6 +22,7 @@ const categoryTitles = categories.map(c => c.title);
 let selectedCategory = [];
 let selectedSort = "";
 let selectedRating = "";
+let searchQuery = "";
 let currentPage = 1;
 let pageSize = 6;
 
@@ -58,21 +62,51 @@ const paginationEl = document.getElementById("pagination");
 const clearAllBtn = document.getElementById("clearAllBtn");
 const pageSizeSelect = document.getElementById("pageSize");
 const chipContainer = document.getElementById("chipContainer");
+const colorThemes = document.getElementById("themes");
+// ===== Color Themes =====
 
+let theme = 0;
+
+colorThemes.addEventListener("click", function () {
+  if (theme == 0) {
+    document.body.style.backgroundColor = "#fff";
+    theme = 1;
+  } else {
+    document.body.style.backgroundColor = "#1B1B1B";
+    theme = 0;
+  }
+})
+
+// ===========================
 // ===== Filtering =====
 const getFiltered = () => {
   return products.filter(product => {
     let categoryMatch = true;
     if (selectedCategory.length && product.category) {
       categoryMatch = selectedCategory.includes(product.category);
-    };
+    }
+
     let priceMatch = true;
     if (selectedPrice.isApplied) {
       priceMatch = product.price >= selectedPrice.min && product.price <= selectedPrice.max;
     }
-    return categoryMatch && priceMatch;
+
+    let ratingMatch = true;
+    if (selectedRating) {
+      ratingMatch = product.rating >= selectedRating;
+    }
+
+    let searchMatch = true;
+    if (searchQuery) {
+      searchMatch = product.title.toLowerCase().includes(searchQuery) ||
+        product.description.toLowerCase().includes(searchQuery) ||
+        product.category.toLowerCase().includes(searchQuery);
+    }
+
+    return categoryMatch && priceMatch && ratingMatch && searchMatch;
   });
 };
+
 
 // ===== UI Helpers =====
 const formatCurrency = (n) => `Rs ${n}`;
@@ -168,8 +202,7 @@ const renderPriceFilter = (rebuild = true) => {
     priceFilterEl.innerHTML = `
             <input type="range" name="price" id="priceRange" min="${initPriceRange.min}" max="${initPriceRange.max}" value="${selectedPrice.max}" class="w-full" oninput="onChangePrice(this.value)" />
             <div class="flex justify-between text-sm text-neutral-300">
-              <span>${formatCurrency(initPriceRange.min)}</span>
-              <span>${formatCurrency(initPriceRange.max)}</span>
+        
             </div>
           `;
   } else {
@@ -283,7 +316,8 @@ const onChangeRatingHandler = (rating) => {
   console.log("selectedRating", selectedRating);
 
   renderRatingFilter();
-  renderProducts();
+  // renderProducts();
+  renderMain();
 };
 const renderRatingFilter = () => {
   console.log("selectedRating --> ", selectedRating);
@@ -319,6 +353,12 @@ const renderRatingFilter = () => {
     )
     .join("");
 };
+// search fuvnctionality
+const onSearchHandler = (event) => {
+  searchQuery = event.target.value.toLowerCase();
+  renderMain(); // sab filters + pagination dobara chalega
+};
+
 
 const render = () => {
   renderCategoryFilter();
