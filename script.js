@@ -1,21 +1,212 @@
 const products = [
-  { id: 1, image: "./images/products/burger.png", title: "Burger1", description: "Enjoy the crispy chiken fillet in a soft bun with spicy mayo and our signature sauce", price: 100, category: "Burger", rating: 5 },
-  { id: 2, image: "./images/products/shawarma.jpg", title: "Shawarma1", description: "Aromatic arabian rice with 6 pacs of hot shots with KFC famous vietnamese sauce", price: 200, category: "Shawarma", rating: 4 },
-  { id: 3, image: "./images/products/piz.jpg", title: "Pizza1", description: "Crispy zinger with crispy rolled into paratha", price: 300, category: "Pizza", rating: 3 },
-  { id: 4, image: "./images/products/burger.png", title: "Burger2", description: "Enjoy the crispy chiken fillet in a soft bun with spicy mayo and our signature sauce", price: 400, category: "Burger", rating: 2 },
-  { id: 5, image: "./images/products/shawarma.jpg", title: "Shawarma2", description: "Aromatic arabian rice with 6 pacs of hot shots with KFC famous vietnamese sauce", price: 500, category: "Shawarma", rating: 1 },
-  { id: 6, image: "./images/products/piz.jpg", title: "Pizza2", description: "Crispy zinger with crispy rolled into paratha", price: 600, category: "Pizza", rating: 5 },
-  { id: 7, image: "./images/products/burger.png", title: "Burger3", description: "Enjoy the crispy chiken fillet in a soft bun with spicy mayo and our signature sauce", price: 700, category: "Burger", rating: 4 },
-  { id: 8, image: "./images/products/shawarma.jpg", title: "Shawarma3", description: "Aromatic arabian rice with 6 pacs of hot shots with KFC famous vietnamese sauce", price: 800, category: "Shawarma", rating: 3 },
-  { id: 9, image: "./images/products/piz.jpg", title: "Pizza3", description: "Crispy zinger with crispy rolled into paratha", price: 900, category: "Pizza", rating: 2 },
-  { id: 10, image: "./images/products/piz.jpg", title: "Pizza3", description: "Crispy zinger with crispy rolled into paratha", price: 900, category: "Pizza", rating: 2 },
-  { id: 11, image: "./images/products/piz.jpg", title: "Pizza3", description: "Crispy zinger with crispy rolled into paratha", price: 900, category: "Pizza", rating: 2 },
-  { id: 12, image: "./images/products/piz.jpg", title: "Pizza3", description: "Crispy zinger with crispy rolled into paratha", price: 900, category: "Pizza", rating: 2 },
+  // J. Junaid Jamshed
+  {
+    id: 1,
+    image: "./New image/janan_gold.webp",
+    title: "JANAN GOLD",
+    description: " Bergamot, Fruity (Red Apple, Pineapple), White Floral, Patchouli, Leather, Smokey, Oak Moss",
+    price: 5160,
+    category: "J. Junaid Jamshed",
+    rating: 5
+  },
+  {
+    id: 2,
+    image: "./New image/white_musk.webp",
+    title: "WHITE MUSK",
+    description: "Italian Lemon, Mint, Green Apple, White Floral, Vanilla, Woody, Leather, Smokey,",
+    price: 3600,
+    category: "J. Junaid Jamshed",
+    rating: 4
+  },
+  {
+    id: 3,
+    image: "./New image/adnan_sid_ph.webp",
+    title: "CLASSIQUE POUR FEMME",
+    description: "Grapefruit, Blackcurrant Heart Notes: Rose, Transparent Wood",
+    price: 4020,
+    category: "J. Junaid Jamshed",
+    rating: 4
+  },
+  {
+    id: 4,
+    image: "./New image/addicted.webp",
+    title: "ADDICTED FRESH",
+    description: "Citrus, Spices, Woody, Leathery Notes: Rose, Transparent Wood Lemon, Mint",
+    price: 3420,
+    category: "J. Junaid Jamshed",
+    rating: 3
+  },
+  {
+    id: 5,
+    image: "./New image/khumar_red.webp",
+    title: "KHUMAR RED",
+    description: "Top Notes:  GrapefruitHeart Notes: Ginger and Ambrette Base Notes: Ambroxan, Musk, Patchouli and Vetiver",
+    price: 2040,
+    category: "J. Junaid Jamshed",
+    rating: 3
+  },
+  {
+    id: 6,
+    image: "./New image/zarar_bleu_resized.webp",
+    title: "ZARAR BLEU",
+    description: "Base Notes: Vetiver, Musk, Cedarwood, Moss, Amber (Ambrostar Symrise Captive",
+    price: 2400,
+    category: "J. Junaid Jamshed",
+    rating: 4
+  },
+  {
+    id: 7,
+    image: "./New image/dark_star.webp",
+    title: "DARK STAR",
+    description: " Plum, CognacHeart Notes: Tonka Bean, Cinnamon, Oak, Clove, Praline, Sandalwood, Vanilla, Perubalsam, Labdanum",
+    price: 4400,
+    category: "J. Junaid Jamshed",
+    rating: 5
+  },
+  {
+    id: 8,
+    image: "./New image/edge.webp",
+    title: "EDGE",
+    description: "  Bergamot, Nutmeg, White floral, Vetiver, Cedarwood, Musk Vanilla, Perubalsam, Labdanum",
+    price: 3480,
+    category: "J. Junaid Jamshed",
+    rating: 4
+  },
+  {
+    id: 9,
+    image: "./New image/exclusive.webp",
+    title: "J.EXCLUSIVE",
+    description: "  Bergamot, Nutmeg, White floral, Vetiver, Cedarwood, Musk Citrus, Lavender, Patchouli, Vanilla, Woody, Ambry",
+    price: 1785,
+    category: "J. Junaid Jamshed",
+    rating: 2
+  },
+  {
+    id: 10,
+    image: "./New image/great_summit.webp",
+    title: "GREAT SUMMIT",
+    description: "Violet Leaf, Clary Sage, Geranium Egypt, LavenderBase Notes: Musk, Patchouli Indonesia, Amber, Petitgrain Paraguay",
+    price: 3825,
+    category: "J. Junaid Jamshed",
+    rating: 4
+  },
+  // ====================================
+  // Scents N Stories
+  {
+    id: 11,
+    image: "./New image/Box_single01.webp",
+    title: "POCKET PERFUME",
+    description: "Your favorites, now in a bundle so you can take them anywhere and anytime.",
+    price: 4290,
+    category: "Scents N Stories",
+    rating: 4
+  },
+  {
+    id: 12,
+    image: "./New image/IqbalDisplayImage02.webp",
+    title: "IQBAL PERFUME",
+    description: "Iqbal is an Oriental Woody fragrance. It is one of the most unique unisex fragrances. It is a mature scent",
+    price: 4290,
+    category: "Scents N Stories",
+    rating: 3
+  },
+  {
+    id: 13,
+    image: "./New image/Catch22Gold03.webp",
+    title: "CATCH 22 - GOLD EDITION",
+    description: "Catch 22 Gold Edition, a richer rendition of the original Catch 22,",
+    price: 3750,
+    category: "Scents N Stories",
+    rating: 4
+  },
+  {
+    id: 14,
+    image: "./New image/Rabt_50ml04.webp",
+    title: "RABT 50ML",
+    description: "Rabt is a sophisticated woody spicy fragrance for men. With primary accords of amber, musk, citrus, woody, floral, powdery, and fresh spicy,",
+    price: 3450,
+    category: "Scents N Stories",
+    rating: 3
+  },
+  {
+    id: 15,
+    image: "./New image/Hisar-Front05.webp",
+    title: "HISAR",
+    description: "Hisar perfume is an amber woody fragrance for both men and women. Top notes of this fragrance included Dried Fruits,",
+    price: 3990,
+    category: "Scents N Stories",
+    rating: 2
+  },
+  {
+    id: 16,
+    image: "./New image/Zarf_06.webp",
+    title: "ZARF",
+    description: "Zarf is a captivating fragrance for both men and women, boasting a unique composition of mineral, warm spicy, leather, oud, ozonic, woody,",
+    price: 3150,
+    category: "Scents N Stories",
+    rating: 4
+  },
+  {
+    id: 17,
+    image: "./New image/farat07.webp",
+    title: "FARAT",
+    description: "Farat is a fresh and invigorating fragrance for men. It combines citrus, create a captivating scent. With top notes of Grapefruit, Lemon",
+    price: 5990,
+    category: "Scents N Stories",
+    rating: 5
+  },
+  {
+    id: 18,
+    image: "./New image/QARAR08.webp",
+    title: "QARAR",
+    description: "Qarar is an aromatic fragrance for men that exudes a sense of strength and sophistication,",
+    price: 2790,
+    category: "Scents N Stories",
+    rating: 4
+  },
+  {
+    id: 19,
+    image: "./New image/Uraan-Front09.webp",
+    title: "URAAN",
+    description: "Uraan perfume is a citrus aromatic fragrance for men. The top notes of this perfume are Green Mandarin and Timberol,",
+    price: 2670,
+    category: "Scents N Stories",
+    rating: 4
+  },
+  {
+    id: 20,
+    image: "./New image/Soch-Front10.webp",
+    title: "SOCH",
+    description: "Created especially for classy men Soch showcases a blend of zesty, citrusy, and warm fragrances with a touch of spice",
+    price: 4290,
+    category: "Scents N Stories",
+    rating: 5
+  },
+  // ============================================
 ];
 
-const categories = [{ id: 1, title: "Burger", image: "" },
-{ id: 2, title: "Shawarma", image: "" },
-{ id: 3, title: "Pizza", image: "" }];
+const categories = [
+  {
+    id: 1,
+    title: "J. Junaid Jamshed",
+    image: ""
+  },
+  {
+    id: 2,
+    title: "Scents N Stories",
+    image: ""
+  },
+  {
+    id: 3,
+    title: "Saeed Ghani",
+    image: ""
+  },
+  {
+    id: 4,
+    title: "Musk Ul Mahal",
+    image: ""
+  },
+];
 
 const categoryTitles = categories.map(c => c.title);
 
