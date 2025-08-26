@@ -183,6 +183,96 @@ const products = [
     rating: 5
   },
   // ============================================
+  {
+    id: 21,
+    image: "./New image/Haider.1.avif",
+    title: "HAIDER",
+    description: " Pineapple, Bergamot, Black Currant and Apple, Birch, Patchouli, Moroccan Jasmine and Rose",
+    price: 4490,
+    category: "Saeed Ghani",
+    rating: 4
+  },
+  {
+    id: 22,
+    image: "./New image/jalal_100ml 2.avif",
+    title: "JALAL 100ml",
+    description: "Mandarin Orange, Sea Notes  Black Pepper, Neroli, Cedarwood, Tonka Bean, Vetiver, White Musk",
+    price: 4450,
+    category: "Saeed Ghani",
+    rating: 3
+  },
+  {
+    id: 23,
+    image: "./New image/MIR100_3.avif",
+    title: "MIR 100ml",
+    description: " Lavender, Birch  Black Pepper, Neroli, Cedarwood, Tonka Bean, Vetiver, White Musk",
+    price: 3450,
+    category: "Saeed Ghani",
+    rating: 4
+  },
+  {
+    id: 24,
+    image: "./New image/DSC04330_300x4.avif",
+    title: "DURVESH",
+    description: "Grapefruit, Lemon, Bergamot, Tonka Bean, Vetiver, White Musk, Tonka Bean, Vetiver,",
+    price: 5450,
+    category: "Saeed Ghani",
+    rating: 5
+  },
+  {
+    id: 25,
+    image: "./New image/ISHQ100ml_5sg.avif",
+    title: "ISHQ-100ml",
+    description: "Top Notes: Red Berries, PearMiddle Notes: Gardenia, Frangipani, JasmineBase Notes: Patchouli, Brown Sugar",
+    price: 4400,
+    category: "Saeed Ghani",
+    rating: 3
+  },
+  {
+    id: 26,
+    image: "./New image/KHAN_100ml_6sg.avif",
+    title: "KHAN-100ml",
+    description: "Lemon, Mint, Pink Pepper, Grapefruit, Ginger, Nutmeg, Jasmine,  Incense, Cedar, Sandalwood, White Musk",
+    price: 4250,
+    category: "Saeed Ghani",
+    rating: 3
+  },
+  {
+    id: 27,
+    image: "./New image/shah-7sg.avif",
+    title: "SHAH INTENCE",
+    description: " Cardamom, Leather and Jasmine Sambac, Amber, Moss and Patchouli",
+    price: 3990,
+    category: "Saeed Ghani",
+    rating: 3
+  },
+  {
+    id: 28,
+    image: "./New image/Buraq_-_50ml_8sg.avif",
+    title: "BURAQ",
+    description: "Inspired by the swift and majestic, Buraq is a fragrance that embodies strength, speed, and sophistication",
+    price: 4990,
+    category: "Saeed Ghani",
+    rating: 4
+  },
+  {
+    id: 29,
+    image: "./New image/zahra_10SG.avif",
+    title: "ZAHRA",
+    description: "Zahra captures the essence of elegance and warmth, beginning with a refreshing blend of pear",
+    price: 2490,
+    category: "Saeed Ghani",
+    rating: 3
+  },
+  {
+    id: 30,
+    image: "./New image/KASHMIRI_OUD_9SG.avif",
+    title: "KASHMIRI OUD",
+    description: "Kashmiri Oud is a fragrance that embodies timeless elegance and exotic allure",
+    price: 3000,
+    category: "Saeed Ghani",
+    rating: 2
+  },
 ];
 
 const categories = [
