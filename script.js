@@ -183,6 +183,7 @@ const products = [
     rating: 5
   },
   // ============================================
+  // Saeed Ghani
   {
     id: 21,
     image: "./New image/Haider.1.avif",
@@ -273,7 +274,99 @@ const products = [
     category: "Saeed Ghani",
     rating: 2
   },
-];
+  //============================================
+  // Musk ul mahal
+  {
+    id: 31,
+    image: "./New image/musk ul mahl 01.webp",
+    title: "Black And Silver",
+    description: "Black and Silver is an aquatic fresh fragrance suitable for both men and women. This fragrance embodies freshness",
+    price: 2100,
+    category: "Musk Ul Mahal",
+    rating: 4
+  },
+  {
+    id: 32,
+    image: "./New image/musk ul mahl 02.webp",
+    title: "White Oudh",
+    description: "White Oudh by Musk Al Mahal is an Amber- Oudh fragrance for men. It is a luxurious,",
+    price: 1800,
+    category: "Musk Ul Mahal",
+    rating: 3
+  },
+  {
+    id: 33,
+    image: "./New image/musk ul mahl 03.webp",
+    title: "Black N Gold",
+    description: "Black and Gold is a Fruity and Fruity bliss fragrance, designed for men. It combines Sophistication",
+    price: 2100,
+    category: "Musk Ul Mahal",
+    rating: 4
+  },
+  {
+    id: 34,
+    image: "./New image/musk ul mahl 04.webp",
+    title: "Ghilaf E Kaaba",
+    description: "Ghilaf e Kaaba, true to its name, is a sacred attar for men. It's a fragrance that speaks to the soul,",
+    price: 2200,
+    category: "Musk Ul Mahal",
+    rating: 5
+  },
+  {
+    id: 35,
+    image: "./New image/musk ul mahl 05.webp",
+    title: "Red Ball",
+    description: "Red Ball is a citrusy, masculine fragrance with a burst of fruity notes that refreshes you on a hot summer day,",
+    price: 2200,
+    category: "Musk Ul Mahal",
+    rating: 4
+  },
+  {
+    id: 36,
+    image: "./New image/musk ul mahl 06.webp",
+    title: "Savage Man",
+    description: "Savage Man is a boldly masculine fragrance with strong notes that last a whole day.",
+    price: 1300,
+    category: "Musk Ul Mahal",
+    rating: 4
+  },
+  {
+    id: 37,
+    image: "./New image/musk ul mahl 07.webp",
+    title: "Ameer Al Oud ",
+    description: "Ameer Al Oud is a fragrance for those who love rich and exotic scents. This unisex fragrance.",
+    price: 1300,
+    category: "Musk Ul Mahal",
+    rating: 4
+  },
+  {
+    id: 38,
+    image: "./New image/musk ul mahl 11.webp",
+    title: "Shaheer Al Musk",
+    description: "Shaheer Al Musk is our bestselling, Oriental musky fragrance for men. It is a fragrance of modern allure.",
+    price: 2500,
+    category: "Musk Ul Mahal",
+    rating: 5
+  },
+  {
+    id: 39,
+    image: "./New image/musk ul mahl 09.webp",
+    title: "Black Ball",
+    description: "Black Ball by Musk Al Mahal is a masculine spicy- floral attar. Its inviting and crowd-catching aroma has made Black Ball.",
+    price: 2200,
+    category: "Musk Ul Mahal",
+    rating: 5
+  },
+  {
+    id: 40,
+    image: "./New image/musk ul mahl 10.webp",
+    title: "White Musk",
+    description: "White musk has a balanced musky aroma, crafted for both men and women. It is a luxurious.",
+    price: 600,
+    category: "Musk Ul Mahal",
+    rating: 3
+  },
+]
 
 const categories = [
   {
